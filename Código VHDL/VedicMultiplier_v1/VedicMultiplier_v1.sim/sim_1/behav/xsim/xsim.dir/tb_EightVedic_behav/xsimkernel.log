@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_EightVedic_behav/xsimk.exe -simmode gui -wdb tb_EightVedic_behav.wdb -simrunnum 0 -socket 65091
+Design successfully loaded
+Design Loading Memory Usage: 5528 KB (Peak: 5528 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6288 KB (Peak: 6288 KB)
+Simulation CPU Usage: 77 ms
