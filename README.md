@@ -3,6 +3,7 @@
 Trabajo Fin de Titulación para el Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación en la Universidad Politécnica de Madrid.
 
 TUTOR: Pablo Ituero Herrero
+
 TÍTULO: Diseño e implementación en FPGA de una neurona artificial de latencia reducida
 
 RESUMEN:
