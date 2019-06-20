@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun 10 18:09:18 2019
+# Process ID: 10420
+# Current directory: C:/Users/Carmen/Desktop/TFG/Codigo_final/MAC_8bits
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11044 C:\Users\Carmen\Desktop\TFG\Codigo_final\MAC_8bits\MAC_8bits.xpr
+# Log file: C:/Users/Carmen/Desktop/TFG/Codigo_final/MAC_8bits/vivado.log
+# Journal file: C:/Users/Carmen/Desktop/TFG/Codigo_final/MAC_8bits\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Carmen/Desktop/TFG/Codigo_final/MAC_8bits/MAC_8bits.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_design
+launch_simulation
+source MAC_tb.tcl
+relaunch_sim
+close_sim
+close_project
+open_project C:/Users/Carmen/Desktop/TFG/Codigo_final/VedicMultiplier_v2/VedicMultiplier_v2.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator_LG/Accelerator_LG.xpr
+update_compile_order -fileset sources_1
+open_project C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.xpr
+update_compile_order -fileset sources_1
+current_project Accelerator_LG
+close_project
