@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1561047000">
+  <File Type="PA-TCL" Name="Accelerator.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Accelerator_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Accelerator_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Accelerator.vds"/>
+  <File Type="RDS-UTIL" Name="Accelerator_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Accelerator_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Accelerator.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Accelerator_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Accelerator_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/accelerator_utils.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/csa_utils.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/csa_utils.vhd"/>
+        <Attr Name="ImportTime" Val="1553971284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/CSA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/CSA.vhd"/>
+        <Attr Name="ImportTime" Val="1556017430"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/csa_acc_utils.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../MAC_8bits/MAC_8bits.srcs/sources_1/new/csa_acc_utils.vhd"/>
+        <Attr Name="ImportTime" Val="1558871086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/CSA_ACC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../MAC_8bits/MAC_8bits.srcs/sources_1/new/CSA_ACC.vhd"/>
+        <Attr Name="ImportTime" Val="1558871173"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/FA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/FA.vhd"/>
+        <Attr Name="ImportTime" Val="1553970778"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/LUT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/LUT.vhd"/>
+        <Attr Name="ImportTime" Val="1553971848"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/rca_utils.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/rca_utils.vhd"/>
+        <Attr Name="ImportTime" Val="1553971184"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/RCA_4b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/RCA_4b.vhd"/>
+        <Attr Name="ImportTime" Val="1553970782"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_input.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_input.vhd"/>
+        <Attr Name="ImportTime" Val="1553970782"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_output.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_output.vhd"/>
+        <Attr Name="ImportTime" Val="1553970784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_utils.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_utils.vhd"/>
+        <Attr Name="ImportTime" Val="1553975746"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_multi.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_multi.vhd"/>
+        <Attr Name="ImportTime" Val="1553970786"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/mux_2to1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/mux_2to1.vhd"/>
+        <Attr Name="ImportTime" Val="1553970788"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Accelerator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_utils.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/mac_utils.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../TFG/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/mac_utils.vhd"/>
+        <Attr Name="ImportTime" Val="1553971348"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Accelerator"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1558865451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

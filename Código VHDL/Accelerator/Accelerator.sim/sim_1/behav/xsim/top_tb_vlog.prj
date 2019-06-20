@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Accelerator.srcs/sources_1/ip/clk_72Mhz" \
+"../../../../Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_clk_wiz.v" \
+"../../../../Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1905 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 29 14:57:28 2019
+# Process ID: 7028
+# Current directory: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5300 C:\Users\Carmen\Desktop\TFG\Codigo_final\Accelerator\Accelerator.xpr
+# Log file: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/vivado.log
+# Journal file: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 763.984 ; gain = 185.738
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 812.945 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=49.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed May 29 15:01:08 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 83.715 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Wed May 29 15:01:08 2019...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 812.945 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 812.945 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:00:49 . Memory (MB): peak = 812.945 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 832.598 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 832.598 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=49.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 832.598 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 832.598 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 832.598 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+[Wed May 29 15:32:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_1/runme.log
+[Wed May 29 15:32:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+[Wed May 29 15:35:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_1/runme.log
+[Wed May 29 15:35:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1710.836 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1710.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1710.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1839.203 ; gain = 730.176
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+[Wed May 29 15:55:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_1/runme.log
+[Wed May 29 15:55:17 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_72/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1951.211 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1951.211 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 2373.145 ; gain = 507.949
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/CSA_ACC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/new/TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/new/Accelerator.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/CSA_ACC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/new/TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/new/Accelerator.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a100tcsg324-1
+current_run [get_runs synth_2]
+set_property strategy Flow_AlternateRoutability [get_runs synth_2]
+launch_runs impl_2 -jobs 4
+[Wed May 29 16:03:26 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 16:03:26 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+reset_run impl_2
+set_property strategy {Vivado Synthesis Defaults} [get_runs synth_2]
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+[Wed May 29 16:06:37 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 16:06:37 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.dcp' for cell 'clk_72'
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_board.xdc] for cell 'clk_72/inst'
+Finished Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_board.xdc] for cell 'clk_72/inst'
+Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc] for cell 'clk_72/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc:57]
+Finished Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc] for cell 'clk_72/inst'
+Parsing XDC File [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc:11]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc:12]
+Finished Parsing XDC File [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2782.813 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2782.813 ; gain = 0.000
+current_design impl_1
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 2859.434 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 2859.434 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2859.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2859.434 ; gain = 76.621
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+current_design impl_1
+close_design
+close_design
+close_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3251.410 ; gain = 0.000
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {151.636} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 16:14:23 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+WARNING: [Project 1-478] Design 'synth_2' is stale and will not be used when launching 'impl_2'
+[Wed May 29 16:15:52 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 16:15:52 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+WARNING: [Project 1-478] Design 'synth_2' is stale and will not be used when launching 'impl_2'
+[Wed May 29 16:18:20 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 16:18:20 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc:11]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc:12]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+close_design
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {36.500} CONFIG.CLKOUT1_JITTER {181.828} CONFIG.CLKOUT1_PHASE_ERROR {104.359}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 16:28:38 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 16:29:03 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 16:29:03 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.dcp' for cell 'clk_72'
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_board.xdc] for cell 'clk_72/inst'
+Finished Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_board.xdc] for cell 'clk_72/inst'
+Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc] for cell 'clk_72/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc:57]
+Finished Parsing XDC File [c:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xdc] for cell 'clk_72/inst'
+Parsing XDC File [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/constrs_1/imports/Codigo_final/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3251.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3251.410 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+close_design
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 3251.410 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 3251.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3251.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {45} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {49.500} CONFIG.MMCM_CLKOUT0_DIVIDE_F {22.000} CONFIG.CLKOUT1_JITTER {276.887} CONFIG.CLKOUT1_PHASE_ERROR {296.868}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 16:36:27 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 16:37:04 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 16:37:04 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 3251.410 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 3251.410 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 3251.410 ; gain = 0.000
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {48.5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {48.500} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {276.342} CONFIG.CLKOUT1_PHASE_ERROR {297.358}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 16:41:46 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 16:43:05 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 16:43:05 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 3417.781 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 3417.781 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 3417.781 ; gain = 8.258
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.CLKOUT1_JITTER {151.636} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP clk_72Mhz, cache-ID = 2d0225cc858c4626; cache size = 0.610 MB.
+catch { [ delete_ip_run [get_ips -all clk_72Mhz] ] }
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci' from fileset 'clk_72Mhz' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci'
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+update_compile_order -fileset sources_1
+launch_runs impl_2 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci' is already up-to-date
+[Wed May 29 17:04:25 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 17:04:25 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 3583.637 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 3583.637 ; gain = 8.566
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {52.5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {49.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {19.000} CONFIG.CLKOUT1_JITTER {266.107} CONFIG.CLKOUT1_PHASE_ERROR {293.793}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 17:14:58 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+[Wed May 29 17:23:56 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 17:23:56 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+close_design
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {54} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {18.750} CONFIG.CLKOUT1_JITTER {147.672} CONFIG.CLKOUT1_PHASE_ERROR {97.646}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 17:30:11 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 17:30:44 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 17:30:44 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 3583.637 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3583.637 ; gain = 0.000
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {56} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {50.750} CONFIG.MMCM_CLKOUT0_DIVIDE_F {18.125} CONFIG.CLKOUT1_JITTER {257.315} CONFIG.CLKOUT1_PHASE_ERROR {294.830}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 17:40:44 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 17:41:00 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 17:41:00 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.261 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.261 . Memory (MB): peak = 3583.637 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 3583.637 ; gain = 0.000
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {58} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKOUT0_DIVIDE_F {17.500} CONFIG.CLKOUT1_JITTER {256.039}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 17:48:11 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 17:48:26 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 17:48:26 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 3583.637 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 3583.637 ; gain = 0.000
+close_design
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {63} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {39.375} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.625} CONFIG.CLKOUT1_JITTER {236.536} CONFIG.CLKOUT1_PHASE_ERROR {237.634}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 17:53:36 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 17:54:06 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 17:54:07 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.211 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.213 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {65} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {50.375} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.500} CONFIG.CLKOUT1_JITTER {254.866} CONFIG.CLKOUT1_PHASE_ERROR {297.890}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 17:58:32 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 17:58:49 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 17:58:49 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {68} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {51.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.000} CONFIG.CLKOUT1_JITTER {249.979} CONFIG.CLKOUT1_PHASE_ERROR {300.046}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:03:02 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:03:17 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:03:18 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Common 17-344] 'open_run' was cancelled
+close_design
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {70} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {49.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14.250} CONFIG.CLKOUT1_JITTER {253.453} CONFIG.CLKOUT1_PHASE_ERROR {293.793}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:08:04 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:12:20 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:12:20 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {71.5} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {53.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.000} CONFIG.CLKOUT1_JITTER {233.934} CONFIG.CLKOUT1_PHASE_ERROR {296.014}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:16:05 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:16:24 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:16:25 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.262 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Common 17-344] 'open_run' was cancelled
+close_design
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {73} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.500} CONFIG.CLKOUT1_JITTER {145.570} CONFIG.CLKOUT1_PHASE_ERROR {104.359}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:21:02 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:22:07 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:22:07 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {76} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {49.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {13.125} CONFIG.CLKOUT1_JITTER {250.502} CONFIG.CLKOUT1_PHASE_ERROR {293.793}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:25:49 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:26:03 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:26:04 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {78} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.750} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.500} CONFIG.CLKOUT1_JITTER {136.923} CONFIG.CLKOUT1_PHASE_ERROR {99.281}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:30:35 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:30:48 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:30:48 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {79} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.875} CONFIG.CLKOUT1_JITTER {135.316} CONFIG.CLKOUT1_PHASE_ERROR {98.344}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:35:18 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:35:49 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:35:49 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {82} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.250} CONFIG.CLKOUT1_JITTER {133.865} CONFIG.CLKOUT1_PHASE_ERROR {96.739}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:40:09 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:43:08 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:43:08 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {83} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.375} CONFIG.CLKOUT1_JITTER {132.282} CONFIG.CLKOUT1_PHASE_ERROR {95.856}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+reset_run clk_72Mhz_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+launch_runs -jobs 4 clk_72Mhz_synth_1
+[Wed May 29 18:47:03 2019] Launched clk_72Mhz_synth_1...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2
+
+launch_runs impl_2 -jobs 4
+[Wed May 29 18:47:21 2019] Launched clk_72Mhz_synth_1, synth_2...
+Run output will be captured here:
+clk_72Mhz_synth_1: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1/runme.log
+synth_2: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:47:22 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {82} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.250} CONFIG.CLKOUT1_JITTER {133.865} CONFIG.CLKOUT1_PHASE_ERROR {96.739}] [get_ips clk_72Mhz]
+generate_target all [get_files  C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_72Mhz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_72Mhz'...
+catch { config_ip_cache -export [get_ips -all clk_72Mhz] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP clk_72Mhz, cache-ID = adc3edd285556f62; cache size = 1.523 MB.
+catch { [ delete_ip_run [get_ips -all clk_72Mhz] ] }
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/clk_72Mhz_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci' from fileset 'clk_72Mhz' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci'
+export_simulation -of_objects [get_files C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci] -directory C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files -ipstatic_source_dir C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/modelsim} {questa=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/questa} {riviera=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/riviera} {activehdl=C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3583.637 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+close_design
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.xci' is already up-to-date
+[Wed May 29 18:53:39 2019] Launched synth_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/synth_2/runme.log
+[Wed May 29 18:53:39 2019] Launched impl_2...
+Run output will be captured here: C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.runs/impl_2/runme.log
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/new/Accelerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Accelerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:39 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/ip/clk_72Mhz/clk_72Mhz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_72Mhz
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 3583.637 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 3583.637 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carmen/Desktop/TFG/Codigo_final/Accelerator/Accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 82c942469fa24ec0ba42b39d7274b6f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.top_util
+Compiling package xil_defaultlib.accelerator_utils
+Compiling package xil_defaultlib.dadda_utils
+Compiling package xil_defaultlib.csa_utils
+Compiling package xil_defaultlib.rca_utils
+Compiling package xil_defaultlib.csa_acc_utils
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.25...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_72Mhz_clk_wiz
+Compiling module xil_defaultlib.clk_72Mhz
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_input [twos_complement_input_default]
+Compiling architecture behavioral of entity xil_defaultlib.Twos_complement_output [twos_complement_output_default]
+Compiling architecture dadda_multi_arch of entity xil_defaultlib.dadda_multi [dadda_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4b [rca_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA [csa_default]
+Compiling architecture behavioral of entity xil_defaultlib.CSA_ACC [\CSA_ACC(ninputs=3,ncycles=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.LUT [lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.Accelerator [accelerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3583.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3583.637 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 3583.637 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 29 19:28:52 2019...

@@ -1,0 +1,20 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sim_1/new/Accelerator_tb.vhd,1560905867,vhdl,,,,accelerator_tb,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/CSA.vhd,1561045032,vhdl,,,,csa,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/FA.vhd,1561045093,vhdl,,,,fa,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/LUT.vhd,1561045125,vhdl,,,,lut,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/RCA_4b.vhd,1561045147,vhdl,,,,rca_4b,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_input.vhd,1561045156,vhdl,,,,twos_complement_input,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_output.vhd,1561045165,vhdl,,,,twos_complement_output,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/csa_utils.vhd,1553971284,vhdl,C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/CSA.vhd,,,csa_utils,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_multi.vhd,1561045193,vhdl,,,,dadda_multi,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_utils.vhd,1561045182,vhdl,C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_multi.vhd,,,dadda_utils,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/mux_2to1.vhd,1561045200,vhdl,,,,mux_2to1,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/rca_utils.vhd,1561045138,vhdl,C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/RCA_4b.vhd,,,rca_utils,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/CSA_ACC.vhd,1561046654,vhdl,,,,csa_acc,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/csa_acc_utils.vhd,1558871086,vhdl,C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/CSA_ACC.vhd,,,csa_acc_utils,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/new/Accelerator.vhd,1561046369,vhdl,,,,accelerator,,,,,,,,
+C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/new/accelerator_utils.vhd,1560595107,vhdl,C:/Users/Carmen/Desktop/Memoria/Codigo_VHDL/Accelerator/Accelerator.srcs/sources_1/new/Accelerator.vhd,,,accelerator_utils,,,,,,,,
