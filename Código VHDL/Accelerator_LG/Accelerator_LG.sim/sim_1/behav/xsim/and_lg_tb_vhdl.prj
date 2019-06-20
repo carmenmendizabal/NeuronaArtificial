@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/new/accelerator_utils.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/new/AND_LG.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/new/Accelerator.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/csa_utils.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/CSA.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/csa_acc_utils.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/final/MAC_8bits/MAC_8bits.srcs/sources_1/new/CSA_ACC.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/FA.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/LUT.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/rca_utils.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/RCA_4b.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_input.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/Twos_complement_output.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_utils.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/dadda_multi.vhd" \
+"../../../../Accelerator_LG.srcs/sources_1/imports/sources_1/imports/Codigo/ArtificialNeuron/ArtificialNeuron.srcs/sources_1/new/mux_2to1.vhd" \
+"../../../../Accelerator_LG.srcs/sim_1/new/and_lg_tb.vhd" \
+
+# Do not sort compile order
+nosort

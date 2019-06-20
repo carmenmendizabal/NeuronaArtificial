@@ -1,0 +1,7 @@
+Running: xsim.dir/xnor_lg_tb_behav/xsimk.exe -simmode gui -wdb xnor_lg_tb_behav.wdb -simrunnum 0 -socket 62681
+Design successfully loaded
+Design Loading Memory Usage: 8212 KB (Peak: 8212 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 10264 KB (Peak: 10264 KB)
+Simulation CPU Usage: 108 ms

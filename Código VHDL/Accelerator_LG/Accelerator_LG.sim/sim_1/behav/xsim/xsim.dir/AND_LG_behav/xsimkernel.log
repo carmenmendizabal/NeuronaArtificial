@@ -1,0 +1,7 @@
+Running: xsim.dir/AND_LG_behav/xsimk.exe -simmode gui -wdb AND_LG_behav.wdb -simrunnum 0 -socket 52268
+Design successfully loaded
+Design Loading Memory Usage: 6708 KB (Peak: 6708 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 8300 KB (Peak: 8300 KB)
+Simulation CPU Usage: 92 ms
